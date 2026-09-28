@@ -32,6 +32,7 @@ export default defineConfig({
           { text: '下载中心', link: '/tools/', activeMatch: '/tools/' },
           { text: '更新日志', link: '/changelog/', activeMatch: '/changelog/' },
           { text: '常见问题', link: '/faq' },
+          { text: '技术文章', link: '/articles/', activeMatch: '/articles/' },
           { text: '关于', link: '/about' },
         ],
         sidebar: {
@@ -67,6 +68,18 @@ export default defineConfig({
           ],
           '/tools/': [{ text: '下载中心', items: [{ text: '工具下载', link: '/tools/' }] }],
           '/changelog/': [{ text: '更新日志', items: [{ text: '版本历史', link: '/changelog/' }] }],
+          '/articles/': [
+            {
+              text: '技术文章',
+              items: [
+                { text: '文章索引', link: '/articles/' },
+                { text: 'IDA 调试 Dalvik 指令', link: '/articles/ida-dalvik-debug' },
+                { text: 'IDA 调试 SO 文件', link: '/articles/ida-so-debug' },
+                { text: 'IDA 启动闪退排查', link: '/articles/ida-crash-fix' },
+                { text: 'pip 报错 _ctypes 修复', link: '/articles/pip-ctypes-fix' },
+              ],
+            },
+          ],
         },
         outline: { level: [2, 3], label: '本页目录' },
         docFooter: { prev: '上一篇', next: '下一篇' },
@@ -88,6 +101,7 @@ export default defineConfig({
           { text: 'Downloads', link: '/en/tools/', activeMatch: '/en/tools/' },
           { text: 'Changelog', link: '/en/changelog/', activeMatch: '/en/changelog/' },
           { text: 'FAQ', link: '/en/faq' },
+          { text: 'Articles', link: '/en/articles/', activeMatch: '/en/articles/' },
           { text: 'About', link: '/en/about' },
         ],
         sidebar: {
@@ -123,6 +137,18 @@ export default defineConfig({
           ],
           '/en/tools/': [{ text: 'Downloads', items: [{ text: 'Tool Downloads', link: '/en/tools/' }] }],
           '/en/changelog/': [{ text: 'Changelog', items: [{ text: 'Version History', link: '/en/changelog/' }] }],
+          '/en/articles/': [
+            {
+              text: 'Articles',
+              items: [
+                { text: 'Index', link: '/en/articles/' },
+                { text: 'IDA: Dalvik Debugging', link: '/articles/ida-dalvik-debug' },
+                { text: 'IDA: SO Debugging', link: '/articles/ida-so-debug' },
+                { text: 'IDA: Startup Crash Fix', link: '/articles/ida-crash-fix' },
+                { text: 'pip _ctypes Fix', link: '/articles/pip-ctypes-fix' },
+              ],
+            },
+          ],
         },
         outline: { level: [2, 3], label: 'On this page' },
       },
