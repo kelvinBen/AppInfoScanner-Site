@@ -2,7 +2,8 @@
 
 [AppInfoScanner](https://github.com/kelvinBen/AppInfoScanner)（移动端 / Web 资产信息收集 CLI）的官方网站，基于 [VitePress](https://vitepress.dev/) 构建，中英双语，发布在 GitHub Pages：
 
-> https://kelvinben.github.io/AppInfoScanner-Site/
+> https://blog.52zhuanke.cn/AppInfoScanner-Site/
+> （ kelvinben.github.io/AppInfoScanner-Site/ 会 301 跳转至此——用户站绑定的自定义域名）
 
 ## 本地开发
 

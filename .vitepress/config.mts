@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // 站点唯一事实源：GitHub Pages 项目页，仓库名变更时只需改这里
 const BASE = '/AppInfoScanner-Site/'
-const SITE_URL = 'https://kelvinben.github.io/AppInfoScanner-Site/'
+const SITE_URL = 'https://blog.52zhuanke.cn/AppInfoScanner-Site/'
 const REPO_URL = 'https://github.com/kelvinBen/AppInfoScanner'
 
 export default defineConfig({
