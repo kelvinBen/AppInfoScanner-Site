@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AppInfoScanner">
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#0d1117" stroke="#1f6f54" stroke-width="2"/>
+  <path d="M32 11 L46 17.5 V29 C46 39.5 39.8 45.8 32 49.5 C24.2 45.8 18 39.5 18 29 V17.5 Z" fill="none" stroke="#2ee6a8" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M20 36 A12 12 0 0 1 44 36" fill="none" stroke="#2ee6a8" stroke-width="2.6" stroke-linecap="round" opacity="0.95"/>
+  <path d="M24.5 36 A7.5 7.5 0 0 1 39.5 36" fill="none" stroke="#2ee6a8" stroke-width="2.6" stroke-linecap="round" opacity="0.6"/>
+  <circle cx="32" cy="36" r="3" fill="#2ee6a8"/>
+</svg>
