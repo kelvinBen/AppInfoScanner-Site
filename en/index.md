@@ -6,7 +6,7 @@ hero:
   text: Mobile & Web Asset Recon CLI
   tagline: An information-gathering scanner for HW operations / red team / pentest teams — quickly extract URLs, IPs, components, AK/SK and other key assets from Android, iOS, Web/H5, with json / txt / xlsx reporting.
   image:
-    src: /logo.svg
+    src: /logo.png
     alt: AppInfoScanner
   actions:
     - theme: brand

@@ -36,4 +36,4 @@ pnpm docs:preview # 本地预览构建产物 http://localhost:4173
 
 ## 品牌素材
 
-当前 `public/logo.svg` 为过渡版手绘标识。配置 `DASHSCOPE_API_KEY` 到项目根 `.env` 后执行 `scripts/generate-brand.sh`，用 Qwen 图像模型生成正式品牌稿（logo 多稿 / og 分享卡 / hero 装饰图），产物落 `public/brand-drafts/`，选定后替换 `public/logo.svg` 与 `og-card.png`。
+正式品牌稿已定稿（Qwen 图像生成，2026-09-28）：logo 采用盾牌+雷达粗描线稿（备选稿存 `brand-drafts/`，仅入库不部署），`public/` 下 `logo.png` / `favicon-32.png` / `favicon-512.png` / `apple-touch-icon.png` / `og-card.png` 均由定稿切出。换稿时改 `scripts/generate-brand.sh` 的 prompt 重新生成，再按同路径覆盖切图即可。

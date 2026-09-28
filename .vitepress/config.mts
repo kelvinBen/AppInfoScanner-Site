@@ -11,7 +11,7 @@ export default defineConfig({
   title: 'AppInfoScanner',
   description: '移动端 / Web 资产信息收集 CLI（红队 / 渗透测试场景）',
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: BASE + 'logo.svg' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '512x512', href: BASE + 'logo.png' }],
     ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: BASE + 'favicon-32.png' }],
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: BASE + 'apple-touch-icon.png' }],
     ['meta', { property: 'og:site_name', content: 'AppInfoScanner' }],
@@ -129,7 +129,7 @@ export default defineConfig({
     },
   },
   themeConfig: {
-    logo: '/logo.svg',
+    logo: '/logo.png',
     siteTitle: 'AppInfoScanner',
     socialLinks: [{ icon: 'github', link: REPO_URL }],
     externalLinkIcon: true,

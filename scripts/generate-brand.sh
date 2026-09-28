@@ -8,7 +8,7 @@ set -euo pipefail
 
 SKILL_SCRIPT="/Users/tom/.zcode/skills/qianwen-image-generation/scripts/image.py"
 OUT_DIR="$(cd "$(dirname "$0")/.." && pwd)/public/brand-drafts"
-MODEL="qwen-image-3.0-pro"   # 官方目录当前推荐的旗舰文生图模型；Token Plan Key 请按目录换用受支持型号
+MODEL="qwen-image-3.0"   # 2026-09-28 实测: 本 Key 的 pro 档免费额度已耗尽(FreeTierOnly 403), 3.0 档可用
 
 mkdir -p "$OUT_DIR"
 

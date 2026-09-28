@@ -6,7 +6,7 @@ hero:
   text: 移动端 / Web 资产信息收集 CLI
   tagline: 适用于 HW 行动 / 红队 / 渗透测试场景，从 Android、iOS、Web/H5 中快速提取 URL、IP、组件、AK/SK 等关键资产信息，并以 json / txt / xlsx 报告输出。
   image:
-    src: /logo.svg
+    src: /logo.png
     alt: AppInfoScanner
   actions:
     - theme: brand
