@@ -36,4 +36,4 @@ pnpm docs:preview # 本地预览构建产物 http://localhost:4173
 
 ## 品牌素材
 
-正式品牌稿已定稿（Qwen 图像生成，2026-09-28）：logo 采用盾牌+雷达粗描线稿（备选稿存 `brand-drafts/`，仅入库不部署），`public/` 下 `logo.png` / `favicon-32.png` / `favicon-512.png` / `apple-touch-icon.png` / `og-card.png` 均由定稿切出。换稿时改 `scripts/generate-brand.sh` 的 prompt 重新生成，再按同路径覆盖切图即可。
+正式品牌稿已定稿（Qwen 图像生成，2026-09-28）：logo 采用盾牌+雷达粗描线稿（备选稿存 `brand-drafts/`，仅入库不部署），`public/` 下 `logo.png` / `favicon-32.png` / `favicon-512.png` / `apple-touch-icon.png` / `og-card.png` 均由定稿切出。logo 为 RGBA PNG（圆角外透明）；换稿时改 `scripts/generate-brand.sh` 的 prompt 重新生成，再跑 `python3 scripts/process-logo.py <源图>` 完成透明化与切图。特性卡图标在 `public/icons/`（light/dark 双套手绘 SVG）。

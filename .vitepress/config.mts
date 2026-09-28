@@ -136,6 +136,9 @@ export default defineConfig({
     footer: {
       message: 'Released under the GPL-3.0 License. 仅限授权渗透测试 / 红队场景使用 / Authorized pentest use only.',
       copyright: 'Copyright © 2021-present kelvinBen · AppInfoScanner',
+      links: [
+        { text: '友情链接 · 404StarLink 2.0 - Galaxy', link: 'https://github.com/knownsec/404StarLink2.0-Galaxy' },
+      ],
     },
     search: {
       provider: 'local',
