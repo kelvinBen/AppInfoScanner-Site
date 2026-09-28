@@ -27,7 +27,7 @@ pnpm docs:preview # 本地预览构建产物 http://localhost:4173
 
 ## 发布
 
-`master` 分支推送即触发 `.github/workflows/deploy.yml` 自动构建并发布到 GitHub Pages。
+`main` 分支推送即触发 `.github/workflows/deploy.yml` 自动构建并发布到 GitHub Pages。
 
 ## 内容同步约定
 
