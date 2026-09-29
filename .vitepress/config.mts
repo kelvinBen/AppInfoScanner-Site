@@ -7,6 +7,7 @@ const REPO_URL = 'https://github.com/kelvinBen/AppInfoScanner'
 
 export default defineConfig({
   base: BASE,
+  sitemap: { hostname: SITE_URL },
   lang: 'zh-CN',
   title: 'AppInfoScanner',
   description: '移动端 / Web 资产信息收集 CLI（红队 / 渗透测试场景）',
@@ -35,6 +36,7 @@ export default defineConfig({
           { text: '常见问题', link: '/faq' },
           { text: '技术文章', link: '/articles/', activeMatch: '/articles/' },
           { text: '关于', link: '/about' },
+          { text: '赞助', link: '/sponsor/', activeMatch: '/sponsor/' },
         ],
         sidebar: {
           '/guide/': [
@@ -70,6 +72,7 @@ export default defineConfig({
           '/tools/': [{ text: '下载中心', items: [{ text: '工具下载', link: '/tools/' }] }],
           '/rules/': [{ text: '规则中心', items: [{ text: '内置规则浏览', link: '/rules/' }, { text: '补充规则', link: '/rules/#补充规则' }] }],
           '/changelog/': [{ text: '更新日志', items: [{ text: '版本历史', link: '/changelog/' }] }],
+          '/sponsor/': [{ text: '赞助', items: [{ text: '赞助与捐赠', link: '/sponsor/' }] }],
           '/articles/': [
             {
               text: '技术文章',
@@ -106,6 +109,7 @@ export default defineConfig({
           { text: 'FAQ', link: '/en/faq' },
           { text: 'Articles', link: '/en/articles/', activeMatch: '/en/articles/' },
           { text: 'About', link: '/en/about' },
+          { text: 'Sponsor', link: '/en/sponsor/', activeMatch: '/en/sponsor/' },
         ],
         sidebar: {
           '/en/guide/': [
@@ -141,6 +145,7 @@ export default defineConfig({
           '/en/tools/': [{ text: 'Downloads', items: [{ text: 'Tool Downloads', link: '/en/tools/' }] }],
           '/en/rules/': [{ text: 'Rule Center', items: [{ text: 'Built-in Rules', link: '/en/rules/' }, { text: 'Contributing Rules', link: '/en/rules/#contributing-rules' }] }],
           '/en/changelog/': [{ text: 'Changelog', items: [{ text: 'Version History', link: '/en/changelog/' }] }],
+          '/en/sponsor/': [{ text: 'Sponsor', items: [{ text: 'Sponsor & Donate', link: '/en/sponsor/' }] }],
           '/en/articles/': [
             {
               text: 'Articles',

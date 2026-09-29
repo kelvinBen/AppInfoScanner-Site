@@ -18,6 +18,22 @@ Released under the [GPL-3.0](https://github.com/kelvinBen/AppInfoScanner/blob/ma
 
 AppInfoScanner is part of 404Team [StarLink 2.0](https://github.com/knownsec/404StarLink2.0-Galaxy). For questions or discussion, refer to the [StarLink community](https://github.com/knownsec/404StarLink2.0-Galaxy#community).
 
+## Media Coverage
+
+- Listed in [404StarLink 2.0 - Galaxy](https://github.com/knownsec/404StarLink2.0-Galaxy) (Knownsec 404Team StarLink program)
+- Featured on [Kitploit](https://kitploit.com) (international security-tool directory)
+- Listed on [Sploitus](https://sploitus.com) (PoC / exploit search engine)
+
+## Media Matrix
+
+| Channel | Address | Status |
+| --- | --- | --- |
+| GitHub | [kelvinBen/AppInfoScanner](https://github.com/kelvinBen/AppInfoScanner) | Main repo |
+| Gitee | [kelvin_ben/AppInfoScanner](https://gitee.com/kelvin_ben/AppInfoScanner) | CN mirror |
+| WeChat group | QR code below | Active |
+| Bilibili | TBD | Planned (demo / field screencasts) |
+| WeChat official account | TBD | Planned (release notes) |
+
 ## Contributing
 
 - If you find this project useful, please click the **Star** button at the top right.

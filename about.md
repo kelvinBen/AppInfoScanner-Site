@@ -18,6 +18,22 @@ AppInfoScanner 是一款适用于 HW 行动 / 红队 / 渗透测试团队场景�
 
 AppInfoScanner 是 404Team [星链计划 2.0](https://github.com/knownsec/404StarLink2.0-Galaxy) 中的一环，如果对 AppInfoScanner 有任何疑问又或是想要找小伙伴交流，可以参考[星链计划的加群方式](https://github.com/knownsec/404StarLink2.0-Galaxy#community)。
 
+## 媒体收录
+
+- [404StarLink 2.0 - Galaxy](https://github.com/knownsec/404StarLink2.0-Galaxy)（知道创宇 404Team 星链计划）收录项目
+- [Kitploit](https://kitploit.com)（国际安全工具目录）收录展示
+- [Sploitus](https://sploitus.com)（PoC / 漏洞利用检索库）收录
+
+## 媒体矩阵
+
+| 渠道 | 地址 | 状态 |
+| --- | --- | --- |
+| GitHub | [kelvinBen/AppInfoScanner](https://github.com/kelvinBen/AppInfoScanner) | 主仓库 |
+| Gitee | [kelvin_ben/AppInfoScanner](https://gitee.com/kelvin_ben/AppInfoScanner) | 国内镜像 |
+| 微信群 | 见下方二维码 | 活跃 |
+| B 站 | 待开通 | 规划中（导览 / 实战录屏） |
+| 微信公众号 | 待开通 | 规划中（发版动态） |
+
 ## 参与贡献
 
 - 如果您觉得这个项目对您有用，请点击项目右上角的 **Star** 按钮。

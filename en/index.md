@@ -74,6 +74,10 @@ features:
 
 ![Scan results](/result.png)
 
+## Support the Project
+
+Maintained by an individual developer in spare time (GPL-3.0, 3500+ stars). If it helps you, consider [becoming a sponsor](/en/sponsor/), [donating](/en/sponsor/#donate-for-individual-users), starring the main repo, or contributing a rule to the [Rule Center](/en/rules/) — all equally appreciated.
+
 ::: danger Disclaimer
 Do NOT use this project's techniques or code for malicious software creation, software copyright/IP theft, or improper profit. Violations may constitute violations of the Criminal Law of the People's Republic of China (Articles 217, 286), the Cybersecurity Law, the Computer Software Protection Regulations, and other laws. The techniques mentioned in this project may only be used for private learning and testing in lawful scenarios. The project author is not responsible for any criminal or civil liability arising from improper use of these techniques.
 :::
