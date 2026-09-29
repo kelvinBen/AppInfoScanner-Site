@@ -74,10 +74,6 @@ On first run the legacy workspace `config.py` is migrated to `config.toml` autom
 
 The python-side frida core and the device-side frida-server **must be the same version** (currently pinned to 17.18.0). `--unpack` pushes a version-matched frida-server automatically; if you deployed one manually, make sure the versions match. See [Packer Detection & Unpacking](/en/guide/unpack).
 
-## 9. IDA Pro crashes at startup with "Fatal error before kernel init"?
-
-Delete `ida.reg` under the `~/.idapro` directory (back it up first; on Windows check the user directory) and restart IDA. Full walkthrough in the [migrated article](/articles/ida-crash-fix).
-
-## 10. CentOS pip install fails with "No module named '_ctypes'" after building Python?
+## 9. CentOS pip install fails with "No module named '_ctypes'" after building Python?
 
 The system is missing the libffi development package: run `yum install libffi-devel -y`, then rebuild with `make && make install` in the Python source directory. Full steps in the [migrated article](/articles/pip-ctypes-fix).

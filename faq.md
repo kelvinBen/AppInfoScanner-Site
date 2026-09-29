@@ -74,10 +74,6 @@ logs/         运行日志（仅保留最新 20 个）
 
 python 侧 frida core 与设备端 frida-server **必须同版本**（当前锁定 17.18.0）。`--unpack` 会自动推送版本匹配的 frida-server 到设备，无需手动处理；若手动部署过 server，请确认版本一致。详见[壳检测与脱壳](/guide/unpack)。
 
-## 9. IDA Pro 打开闪退，报 Fatal error before kernel init？
-
-删除 `~/.idapro` 隐藏目录下的 `ida.reg` 文件后重启 IDA 即可（删除前备份；Windows 用户在用户目录下查找）。完整排查过程见[迁移文章](/articles/ida-crash-fix)。
-
-## 10. CentOS 编译 Python 后装 pip 报 No module named '_ctypes'？
+## 9. CentOS 编译 Python 后装 pip 报 No module named '_ctypes'？
 
 系统缺少 libffi 开发包：`yum install libffi-devel -y` 后回到 Python 源码目录重新 `make && make install`。完整步骤见[迁移文章](/articles/pip-ctypes-fix)。
