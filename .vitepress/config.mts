@@ -30,6 +30,7 @@ export default defineConfig({
         nav: [
           { text: '使用指南', link: '/guide/quickstart', activeMatch: '/guide/' },
           { text: '下载中心', link: '/tools/', activeMatch: '/tools/' },
+          { text: '规则中心', link: '/rules/', activeMatch: '/rules/' },
           { text: '更新日志', link: '/changelog/', activeMatch: '/changelog/' },
           { text: '常见问题', link: '/faq' },
           { text: '技术文章', link: '/articles/', activeMatch: '/articles/' },
@@ -67,6 +68,7 @@ export default defineConfig({
             },
           ],
           '/tools/': [{ text: '下载中心', items: [{ text: '工具下载', link: '/tools/' }] }],
+          '/rules/': [{ text: '规则中心', items: [{ text: '内置规则浏览', link: '/rules/' }, { text: '补充规则', link: '/rules/#补充规则' }] }],
           '/changelog/': [{ text: '更新日志', items: [{ text: '版本历史', link: '/changelog/' }] }],
           '/articles/': [
             {
@@ -99,6 +101,7 @@ export default defineConfig({
         nav: [
           { text: 'Guide', link: '/en/guide/quickstart', activeMatch: '/en/guide/' },
           { text: 'Downloads', link: '/en/tools/', activeMatch: '/en/tools/' },
+          { text: 'Rule Center', link: '/en/rules/', activeMatch: '/en/rules/' },
           { text: 'Changelog', link: '/en/changelog/', activeMatch: '/en/changelog/' },
           { text: 'FAQ', link: '/en/faq' },
           { text: 'Articles', link: '/en/articles/', activeMatch: '/en/articles/' },
@@ -136,6 +139,7 @@ export default defineConfig({
             },
           ],
           '/en/tools/': [{ text: 'Downloads', items: [{ text: 'Tool Downloads', link: '/en/tools/' }] }],
+          '/en/rules/': [{ text: 'Rule Center', items: [{ text: 'Built-in Rules', link: '/en/rules/' }, { text: 'Contributing Rules', link: '/en/rules/#contributing-rules' }] }],
           '/en/changelog/': [{ text: 'Changelog', items: [{ text: 'Version History', link: '/en/changelog/' }] }],
           '/en/articles/': [
             {

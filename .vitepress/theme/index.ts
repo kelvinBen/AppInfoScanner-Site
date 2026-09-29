@@ -3,6 +3,7 @@ import './custom.css'
 import AdSlot from './components/AdSlot.vue'
 import ToolCard from './components/ToolCard.vue'
 import ProgramDownloads from './components/ProgramDownloads.vue'
+import RuleCenter from './components/RuleCenter.vue'
 
 export default {
   extends: DefaultTheme,
@@ -10,5 +11,6 @@ export default {
     app.component('AdSlot', AdSlot)
     app.component('ToolCard', ToolCard)
     app.component('ProgramDownloads', ProgramDownloads)
+    app.component('RuleCenter', RuleCenter)
   },
 }

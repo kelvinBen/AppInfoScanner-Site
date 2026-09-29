@@ -45,3 +45,5 @@ Submission format:
    Example: a certain digital company's shell rule
    Shell: DigitalCompany com.stub.StubApp
 ```
+
+> Want to browse all built-in rules first? See the [Rule Center](/en/rules/). Want to contribute new rules? See [Contributing Rules](/en/rules/#contributing-rules).

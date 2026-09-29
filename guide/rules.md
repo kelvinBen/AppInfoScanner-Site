@@ -45,3 +45,5 @@ python app.py android -i Demo.apk -r ".*baidu.com.*"
    如：某数字公司的壳规则如下
    壳：某数字公司 com.stub.StubApp
 ```
+
+> 想先浏览主程序内置的全部规则？见[规则中心](/rules/)；想为新版本补充规则？见[规则中心 · 补充规则](/rules/#补充规则)。
