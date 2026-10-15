@@ -79,6 +79,7 @@ export default defineConfig({
               items: [
                 { text: '文章索引', link: '/articles/' },
                 { text: '版本说明系列', link: '/articles/releases/' },
+                { text: '各版本使用方法', link: '/articles/usage/' },
                 { text: '实战链路示范（官方）', link: '/articles/hw-workflow' },
                 { text: 'IDA 调试 Dalvik 指令', link: '/articles/ida-dalvik-debug' },
                 { text: 'IDA 调试 SO 文件', link: '/articles/ida-so-debug' },
@@ -154,6 +155,7 @@ export default defineConfig({
               items: [
                 { text: 'Index', link: '/en/articles/' },
                 { text: 'Release Notes', link: '/en/articles/releases/' },
+                { text: 'Usage by Version', link: '/articles/usage/' },
                 { text: 'Field Workflow (official)', link: '/articles/hw-workflow' },
                 { text: 'IDA: Dalvik Debugging', link: '/articles/ida-dalvik-debug' },
                 { text: 'IDA: SO Debugging', link: '/articles/ida-so-debug' },

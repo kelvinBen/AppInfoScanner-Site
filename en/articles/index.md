@@ -3,6 +3,7 @@
 AppInfoScanner field content plus mobile-security related articles from the author's blog. Official usage docs live in the [guide](/en/guide/quickstart).
 
 **[Release Notes series](/en/articles/releases/)**: one article per version, V1.0.0 – V1.0.12.
+**[Usage by version](/articles/usage/)** (Chinese): official usage docs as shipped with each released version (README snapshots per tag).
 
 | Date | Article | Tags |
 | --- | --- | --- |
