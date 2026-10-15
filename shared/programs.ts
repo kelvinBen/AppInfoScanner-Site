@@ -32,18 +32,27 @@ export const cloneCmdMirror = `git clone ${GITEE}.git`
 
 /** 当前版本 */
 export const currentProgram: ProgramRelease = {
-  version: 'V1.0.11',
-  tag: 'V1.0.11_Releases',
-  date: '2026-09-26',
-  zh: '实战反馈九项修复、规则库扩充至 421 条、config.toml 三层深度合并与自动更新机制。',
-  en: 'Nine field-feedback fixes, rule sets expanded to 421, 3-tier config merge and auto-update.',
-  url: ghZip('V1.0.11_Releases'),
-  mirror: giteeZip('V1.0.11_Releases'),
+  version: 'V1.0.12',
+  tag: 'V1.0.12_Releases',
+  date: '2026-10-10',
+  zh: '官方网站与赞助入口上线；组件聚合与宿主归属、PII 完全匹配边界修复、dex 直提模式与依赖分层。',
+  en: 'Official website & sponsorship launched; component aggregation with host attribution, PII boundary fixes, direct dex extraction and dependency layering.',
+  url: ghZip('V1.0.12_Releases'),
+  mirror: giteeZip('V1.0.12_Releases'),
 }
 
 /** 历史版本（含当前版，新版本发布时在此数组头部插入即可） */
 export const historyPrograms: ProgramRelease[] = [
   currentProgram,
+  {
+    version: 'V1.0.11',
+    tag: 'V1.0.11_Releases',
+    date: '2026-09-26',
+    zh: '实战反馈九项修复、规则库扩充至 421 条、config.toml 三层深度合并与自动更新机制。',
+    en: 'Nine field-feedback fixes, rule sets expanded to 421, 3-tier config merge and auto-update.',
+    url: ghZip('V1.0.11_Releases'),
+    mirror: giteeZip('V1.0.11_Releases'),
+  },
   {
     version: 'V1.0.10',
     tag: 'V1.0.10_Releases',

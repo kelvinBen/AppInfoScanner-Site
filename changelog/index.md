@@ -1,6 +1,36 @@
 # 更新日志
 
-完整版本历史，从新到旧。工具本体更新说明同步自主仓库 [update.md](https://github.com/kelvinBen/AppInfoScanner/blob/master/update.md)。
+完整版本历史，从新到旧；每个版本的完整说明也可以以文章形式浏览：[版本说明系列](/articles/releases/)。工具本体更新说明同步自主仓库 [update.md](https://github.com/kelvinBen/AppInfoScanner/blob/master/update.md)。
+
+## V1.0.12
+
+**新增：**
+
+- 新增官方网站（独立仓库 AppInfoScanner-Site：双语文档站 / 下载中心 / 广告位，blog.52zhuanke.cn/AppInfoScanner-Site）与赞助入口（FUNDING.yml）、负责任披露政策（SECURITY.md）；README 双语补官网链接并修正嗅探示例旧参数口径
+- 新增组件聚合与宿主归属报告：同组件多副本按宿主 SDK 归组去重（听云 / 银联等内嵌副本定位），组件明细升级为 组件 / 宿主 / 版本 / 结论 四列（json / txt / xlsx 同步），无版本条目标注「版本未提取到，人工核」
+- 新增 PII 规则三条：港澳通行证（C/H/M+8 裸形态 + 关键词锚定双形态）、驾驶证（证号 / 档案编号，关键词锚定）、信用卡（Visa/Mastercard/Amex/JCB/银联品牌前缀 + Luhn 校验，与银行卡合桶）
+- 新增疑似对称密钥启发式（SecretKeySpec 紧邻 16/24/32 字节可打印常量的低置信标注，声明无前缀密钥盲区）
+- 新增 Email 顶级域白名单（离线内置 gTLD+ccTLD，过滤 %s@2x.png 类模板串误报）
+- 新增 component_hosts（组件宿主映射）与 pii_test_paths（测试向量路径降权）配置键
+- 新增 dex 二进制字符串直提模式（默认开启，秒级完成，可配置回退 baksmali 获取组件路径上下文）
+
+**修复：**
+
+- 修复 Agent 模式语义化退出码被守护线程吞掉（线程内异常回传主线程）；json-only stdout 按新 payload 结构脱敏（凭据 / PII / 疑似密钥 / AI 判定值，管道不再漏明文）；启动期日志不再污染 json-only stdout；断点续扫缓存命中回放（报告不再空壳，旧缓存显著警告）
+- 修复报告体量失控：逐文件归集重置（明细段不再变为文件数×命中数的笛卡尔积）；每值文件清单封顶 20 条（json 增 files_total 真实计数）；域名清单增加形态校验（模板碎片不再混入，嗅探队列同步拦截）
+- 修复实战反馈批次：报告 tool_version 误显 v1.0.10（改读程序版本）；Authorization_Header 跨行拼接假凭据；港澳通行证裸形态误报 ARM 立即数；USCC 全 hex 串即使过校验位也拒绝；同值 PII 双条目归并
+- 修复壳门控误拦 --prefer-dump 与 --unpack 成功 / 失败降级路径（显式脱壳功能首次端到端可用）；疑似未确认壳降级为警告继续扫描
+- 修复 frida 作为普通扫描硬前置的问题（仅 --unpack 需要）；--scope 清单读取失败改为拒止一切嗅探
+- 修复 OID 伪版本被当作组件版本号（1.2.840.* 等前缀过滤 + 语义校验，撤回假「安全」结论）
+- 修复数字类 PII 内嵌于 hex/base64 字符串的整类误报（全证件族完全匹配边界：身份证 / 护照 / 通行证 / 驾驶证 / 手机号 / 银行卡 / 信用卡 / USCC / IMEI / QQ 等）
+- 修复目录输入任务名截断（com.nbbank_dex 不再截成 com）
+
+**优化：**
+
+- 优化壳检测输出流（厂商签名确认后抑制疑似行，prefer-dump 场景静默过程日志）
+- 优化非 tty 场景进度输出（后台 / 重定向按块打印，替代不可见的 \r 单行刷新）
+- 优化 PII 测试向量纵深（路径降权 config 化覆盖全部 PII 类型 + 邻域启发式上下文标注）
+- 优化依赖分层（frida 三件套拆至 requirements-unpack.txt，基础扫描不再强制安装）
 
 ## V1.0.11
 

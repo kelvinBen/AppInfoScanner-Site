@@ -22,6 +22,7 @@ pnpm docs:preview # 本地预览构建产物 http://localhost:4173
 | `guide/` / `en/guide/` | 使用指南（快速开始 / 平台 / 参数 / 配置 / 进阶） |
 | `tools/` / `en/tools/` | 下载中心（数据源 `shared/tools.ts`，改数据即上新） |
 | `changelog/` / `en/changelog/` | 更新日志（`scripts/sync-from-main.sh` 可从主仓库 update.md 生成草稿） |
+| `articles/releases/` | 版本说明系列：每个版本一篇使用说明，与 changelog 单源镜像，**发版时同步补一篇**（新文章结构对齐现有版本页：frontmatter + 日期/下载/导航头 + changelog 该版本段 + 前后版本导航尾） |
 | `shared/ads.ts` | 广告位数据源（自营「赞助商」样式；空配置零渲染） |
 | `.vitepress/theme/` | 主题扩展：品牌色、AdSlot / ToolCard 组件 |
 | `scripts/generate-brand.sh` | Qwen 图像生成品牌素材（需配置 `DASHSCOPE_API_KEY`） |

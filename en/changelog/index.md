@@ -1,6 +1,36 @@
 # Changelog
 
-Full version history, newest first. Mirrors [update.md](https://github.com/kelvinBen/AppInfoScanner/blob/master/update.md) in the main repo.
+Full version history, newest first. Each version also has a standalone article in the [release notes series](/en/articles/releases/). Mirrors [update.md](https://github.com/kelvinBen/AppInfoScanner/blob/master/update.md) in the main repo.
+
+## V1.0.12
+
+**Added:**
+
+- Added official website (separate repo AppInfoScanner-Site: bilingual docs site / download center / ad slots, blog.52zhuanke.cn/AppInfoScanner-Site) plus sponsorship entry (FUNDING.yml) and responsible-disclosure policy (SECURITY.md); README bilingual website links and fixed outdated sniffing example flags
+- Added component aggregation with host attribution: duplicate copies grouped per host SDK (locating embedded copies in TingYun/UnionPay etc.), component details upgraded to Component/Host/Version/Verdict columns (json/txt/xlsx), unversioned entries marked "version not extracted, manual review"
+- Added three PII rules: HK/Macau travel permit (bare C/H/M+8 form plus keyword-anchored form), driving license (license/archive numbers, keyword-anchored), credit card (Visa/Mastercard/Amex/JCB/UnionPay brand prefixes + Luhn check, merged into the bank-card bucket)
+- Added suspected symmetric-key heuristic (low-confidence annotation for SecretKeySpec adjacent to 16/24/32-byte printable constants, declaring the prefix-less key blind spot)
+- Added Email TLD whitelist (offline built-in gTLD+ccTLD, rejecting template strings like %s@2x.png)
+- Added component_hosts (host SDK mapping) and pii_test_paths (test-vector path downweight) config keys
+- Added direct binary string extraction for dex inputs (enabled by default, completes in seconds; can be disabled to fall back to baksmali for component path context)
+
+**Fixed:**
+
+- Fixed agent-mode semantic exit codes being swallowed by daemon threads (in-thread exceptions relayed to the main thread); json-only stdout redaction per the new payload structure (credentials/PII/suspected keys/AI verdicts no longer leak); startup logs no longer pollute json-only stdout; resume-cache replay (reports no longer hollow, stale caches loudly warned)
+- Fixed report size blow-up: per-file aggregation reset (detail sections no longer a file-count × hit-count cartesian product); per-value file lists capped at 20 (json gains files_total true counts); domain lists gain shape validation (template fragments excluded, sniffing queue filtered too)
+- Fixed field-feedback batch: report tool_version showing v1.0.10 (now reads program version); Authorization_Header cross-line concatenation creating fake credentials; HK/Macau permit bare form matching ARM immediates; all-hex USCC rejected even past checksum; duplicate PII entries with/without annotation merged
+- Fixed shell gate wrongly blocking --prefer-dump and --unpack success/failure fallback paths (explicit unpack works end to end for the first time); unconfirmed shell suspicion downgrades to a warning and scanning continues
+- Fixed frida being a hard prerequisite for plain scans (only --unpack needs it); --scope file read failure now denies all sniffing
+- Fixed OID pseudo-versions treated as component versions (prefix filtering for 1.2.840.* plus semantic validation, withdrawing false "safe" verdicts)
+- Fixed a whole class of false positives where numeric PII is embedded in hex/base64 strings (standalone-token boundary for the full document family: ID card/passport/permit/driving license/phone/bank card/credit card/USCC/IMEI/QQ etc.)
+- Fixed directory-input task name truncation (com.nbbank_dex no longer cut to com)
+
+**Optimized:**
+
+- Optimized shell detection output stream (suspected line suppressed once vendor is confirmed; quiet process logs in prefer-dump mode)
+- Optimized progress output for non-tty scenarios (chunked printing for background/redirect instead of invisible \r refresh)
+- Optimized PII test-vector defense in depth (path downweight config-driven covering all PII types, plus neighborhood heuristic annotation)
+- Optimized dependency layering (frida trio split into requirements-unpack.txt; plain scanning no longer requires it)
 
 ## V1.0.11
 

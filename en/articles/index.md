@@ -2,6 +2,8 @@
 
 AppInfoScanner field content plus mobile-security related articles from the author's blog. Official usage docs live in the [guide](/en/guide/quickstart).
 
+**[Release Notes series](/en/articles/releases/)**: one article per version, V1.0.0 – V1.0.12.
+
 | Date | Article | Tags |
 | --- | --- | --- |
 | 2026-09 | [From packed APK to proxied traffic: a full recon chain](/articles/hw-workflow) (official demo, Chinese) | Field work · Unpacking · Proxy |

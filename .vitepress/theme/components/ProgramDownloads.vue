@@ -9,6 +9,10 @@ import {
 
 const props = defineProps<{ locale: 'zh' | 'en' }>()
 const zh = () => props.locale === 'zh'
+// 版本说明文章链接(与 articles/releases/ 系列对应, V1.0.0~V1.0.12 全量)
+const releaseNote = (version: string) =>
+  (zh() ? '/articles/releases/' : '/en/articles/releases/') +
+  version.toLowerCase().replace('_fix', '-fix')
 </script>
 
 <template>
@@ -48,6 +52,7 @@ const zh = () => props.locale === 'zh'
           <th>{{ zh() ? '发布日期' : 'Date' }}</th>
           <th>{{ zh() ? '要点' : 'Highlights' }}</th>
           <th>{{ zh() ? '下载' : 'Download' }}</th>
+          <th>{{ zh() ? '使用说明' : 'Notes' }}</th>
         </tr>
       </thead>
       <tbody>
@@ -63,6 +68,9 @@ const zh = () => props.locale === 'zh'
           <td class="hist-dl">
             <a :href="p.url" target="_blank" rel="noopener">GitHub</a>
             <a v-if="p.mirror" :href="p.mirror" target="_blank" rel="noopener">{{ zh() ? '镜像' : 'Mirror' }}</a>
+          </td>
+          <td class="hist-dl">
+            <a :href="releaseNote(p.version)">{{ zh() ? '版本说明' : 'Notes' }}</a>
           </td>
         </tr>
       </tbody>

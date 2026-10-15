@@ -78,6 +78,8 @@ export default defineConfig({
               text: '技术文章',
               items: [
                 { text: '文章索引', link: '/articles/' },
+                { text: '版本说明系列', link: '/articles/releases/' },
+                { text: '实战链路示范（官方）', link: '/articles/hw-workflow' },
                 { text: 'IDA 调试 Dalvik 指令', link: '/articles/ida-dalvik-debug' },
                 { text: 'IDA 调试 SO 文件', link: '/articles/ida-so-debug' },
                 { text: 'IDA 启动闪退排查', link: '/articles/ida-crash-fix' },
@@ -151,6 +153,8 @@ export default defineConfig({
               text: 'Articles',
               items: [
                 { text: 'Index', link: '/en/articles/' },
+                { text: 'Release Notes', link: '/en/articles/releases/' },
+                { text: 'Field Workflow (official)', link: '/articles/hw-workflow' },
                 { text: 'IDA: Dalvik Debugging', link: '/articles/ida-dalvik-debug' },
                 { text: 'IDA: SO Debugging', link: '/articles/ida-so-debug' },
                 { text: 'IDA: Startup Crash Fix', link: '/articles/ida-crash-fix' },
